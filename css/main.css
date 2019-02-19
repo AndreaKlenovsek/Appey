@@ -280,10 +280,18 @@ nav a {
   display: grid;
 }
 
+.train {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 footer {
   height: 30vh;
   background: #eab3e2;
   position: relative;
+  padding-top: 3em;
 }
 
 /*# sourceMappingURL=main.css.map */
