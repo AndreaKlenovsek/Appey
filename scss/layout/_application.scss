@@ -1,0 +1,22 @@
+.application {
+background: rgba($clr-pink, .5);
+}
+
+.apps {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+}
+
+.phone {
+display: none;
+@include mq(large) {
+display: inline-block;   
+max-height: 600px;
+transform: translateY(-2em);
+margin: 0 auto;
+}
+@include mq(xl) {
+transform: translateY(-3em);
+max-height: 700px;
+}
+}

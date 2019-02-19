@@ -1,0 +1,10 @@
+.home {
+display: grid;
+position: relative;
+height: 65vh;
+
+@include mq(large) {
+grid-template-columns: minmax(auto, 200px) minmax(900px, 1fr);
+}
+}
+
