@@ -3,6 +3,7 @@ background: url(../img/bg.png);
 background-repeat: no-repeat;
 background-size: cover;
 background-position: center;
+background-attachment: fixed;
 height: 65vh;
 display: grid;
 place-items: center;
@@ -27,6 +28,6 @@ max-width: 800px;
 bottom: 6em;
 }
 @include mq(xl) {
-bottom: 15em;
+bottom: 9em;
 }
 }

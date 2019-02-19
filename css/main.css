@@ -57,8 +57,6 @@ nav ul {
   padding: 0;
   list-style: none;
   justify-content: space-around;
-  width: 80%;
-  margin: 0 auto;
 }
 @media (min-width: 1200px) {
   nav ul {
@@ -67,9 +65,6 @@ nav ul {
     height: 65vh;
     display: flex;
   }
-}
-nav li {
-  padding: 1em 1em;
 }
 @media (min-width: 1200px) {
   nav li {
@@ -84,6 +79,7 @@ nav a {
   font-weight: 500;
   letter-spacing: 1px;
   font-family: "EB Garamond", serif;
+  transition: background 350ms;
 }
 @media (min-width: 1200px) {
   nav a {
@@ -92,6 +88,9 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+  nav a:hover, nav a:focus {
+    background: #020724;
   }
 }
 
@@ -102,7 +101,9 @@ nav a {
 }
 @media (min-width: 1200px) {
   .logo {
-    height: 10%;
+    height: 16%;
+    background: #020724;
+    padding: 1em 0;
   }
 }
 
@@ -111,6 +112,7 @@ nav a {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   height: 65vh;
   display: grid;
   place-items: center;
@@ -139,24 +141,72 @@ nav a {
 }
 @media (min-width: 1500px) {
   .hero__title {
-    bottom: 15em;
+    bottom: 9em;
   }
 }
 
 .application {
-  background: rgba(234, 179, 226, 0.5);
+  background: #020724;
 }
 
 .apps {
+  margin-top: 2em;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 1200px) {
+  .apps {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    font-size: 1rem;
+    margin: 0;
+  }
+}
+@media (min-width: 1500px) {
+  .apps {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.phone-section {
+  display: none;
+  position: relative;
+}
+@media (min-width: 1200px) {
+  .phone-section {
+    display: block;
+  }
+}
+
+.logo2 {
+  display: none;
+}
+@media (min-width: 1200px) {
+  .logo2 {
+    display: inline-block;
+    position: absolute;
+    height: 90px;
+    left: 0;
+    right: 0;
+    top: 9.5em;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1500px) {
+  .logo2 {
+    height: 120px;
+    top: 9em;
+  }
 }
 
 .phone {
   display: none;
+  transform: translateY(0);
 }
 @media (min-width: 1200px) {
   .phone {
+    position: relative;
     display: inline-block;
     max-height: 600px;
     transform: translateY(-2em);
@@ -168,6 +218,72 @@ nav a {
     transform: translateY(-3em);
     max-height: 700px;
   }
+}
+
+.text__left, .text__right {
+  display: grid;
+  padding: 4em 0;
+}
+@media (min-width: 1200px) {
+  .text__left, .text__right {
+    justify-content: space-around;
+    padding: 4em 2em;
+  }
+}
+
+.text__left {
+  padding: 3em 0;
+}
+@media (min-width: 1200px) {
+  .text__left {
+    text-align: right;
+    margin-left: auto;
+  }
+}
+
+.text__right {
+  padding: 3em 0;
+}
+@media (min-width: 1200px) {
+  .text__right {
+    text-align: left;
+    margin-right: auto;
+  }
+}
+
+.title__left, .title__right {
+  color: #eab3e2;
+  text-transform: uppercase;
+  margin-top: 1.5em;
+}
+@media (min-width: 1200px) {
+  .title__left, .title__right {
+    margin-top: 0;
+  }
+}
+
+.content__left, .content__right {
+  color: rgba(234, 179, 226, 0.2);
+}
+
+.app {
+  height: 60vh;
+  background: #020724;
+  position: relative;
+}
+
+.app__img {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: grid;
+}
+
+footer {
+  height: 30vh;
+  background: #eab3e2;
+  position: relative;
 }
 
 /*# sourceMappingURL=main.css.map */

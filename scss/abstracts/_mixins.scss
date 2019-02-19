@@ -24,4 +24,11 @@ $breakpoint: map-get($breakpoints, $size);
 }
 }
 
+// Container
+
+@mixin container($width: 80%) {
+max-width: $width;
+margin: 0 auto;
+};
+
 

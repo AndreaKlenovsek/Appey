@@ -1,15 +1,55 @@
 .application {
-background: rgba($clr-pink, .5);
+background: $clr-blue;
+
 }
 
 .apps {
-display: grid;
+margin-top: 2em;
+display: grid; 
+grid-template-columns: repeat(2, 1fr);
+
+@include mq(large) {
+display: grid; 
 grid-template-columns: repeat(3, 1fr);
+font-size: 1rem;
+margin: 0;
+}
+@include mq(xl) {
+@include container($width: 80%);
+}
+}
+
+.phone-section {
+display: none;
+position: relative;
+@include mq(large){
+display: block;
+}
+}
+
+.logo2 {
+display: none;
+
+@include mq(large){
+display: inline-block;
+position: absolute;
+height: 90px;
+left: 0;
+right: 0;
+top: 9.5em;
+margin: 0 auto;
+}
+@include mq(xl) {
+height: 120px;
+top: 9em;
+}
 }
 
 .phone {
 display: none;
+transform: translateY(0);
 @include mq(large) {
+position: relative;
 display: inline-block;   
 max-height: 600px;
 transform: translateY(-2em);
@@ -20,3 +60,47 @@ transform: translateY(-3em);
 max-height: 700px;
 }
 }
+
+.text__left, .text__right {
+display: grid;
+padding: 4em 0;
+@include mq(large) {
+justify-content: space-around;
+padding: 4em 2em;
+
+}
+}
+
+.text__left {
+padding: 3em 0;
+
+@include mq(large) {
+text-align: right;
+margin-left: auto;
+
+}
+}
+
+.text__right {
+padding: 3em 0;
+
+
+@include mq(large) {
+text-align: left;
+margin-right: auto;
+}
+}
+
+.title__left, .title__right {
+color: $clr-pink;
+text-transform: uppercase;
+margin-top: 1.5em;
+@include mq(large) {
+margin-top: 0;
+}
+}
+
+.content__left, .content__right {
+color: rgba($clr-pink, .2);
+}
+
