@@ -284,6 +284,11 @@ nav a {
     margin-top: 0;
   }
 }
+.title__left i, .title__right i {
+  color: #eab3e2;
+  display: block;
+  padding: 0.5em 0;
+}
 
 .content__left, .content__right {
   color: rgba(234, 179, 226, 0.2);

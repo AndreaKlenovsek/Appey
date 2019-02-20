@@ -99,6 +99,12 @@ margin-top: 1.5em;
 @include mq(large) {
 margin-top: 0;
 }
+
+& i {
+color: $clr-pink;
+display: block;
+padding: .5em 0;
+}
 }
 
 .content__left, .content__right {
