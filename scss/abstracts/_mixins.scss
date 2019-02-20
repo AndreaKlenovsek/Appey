@@ -32,3 +32,18 @@ margin: 0 auto;
 };
 
 
+// Line
+
+@mixin line($bg: currentColor, $width: 40%) {
+&::after {
+content: '';
+background: $bg;
+width: $width;
+height: 1px;
+display: block;
+margin: .5em auto;
+
+}
+}
+
+

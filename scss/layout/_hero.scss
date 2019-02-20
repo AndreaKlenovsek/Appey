@@ -19,11 +19,17 @@ right: 0;
 
 .hero__title {
 position: absolute;
-bottom: 5em;
+bottom: 40%;
 left: 0;
 right: 0;
 margin: 0 auto;
+
+
+@include mq(850px) {
+bottom: 5em;
 max-width: 800px;
+}
+
 @include mq(large) {
 bottom: 6em;
 }

@@ -57,6 +57,7 @@ nav ul {
   padding: 0;
   list-style: none;
   justify-content: space-around;
+  padding-top: 0.5em;
 }
 @media (min-width: 1200px) {
   nav ul {
@@ -80,6 +81,13 @@ nav a {
   letter-spacing: 1px;
   font-family: "EB Garamond", serif;
   transition: background 350ms;
+  padding: 0.8em 1em;
+  font-size: 0.7em;
+}
+@media (min-width: 700px) {
+  nav a {
+    font-size: 1rem;
+  }
 }
 @media (min-width: 1200px) {
   nav a {
@@ -95,13 +103,19 @@ nav a {
 }
 
 .logo {
-  height: 100px;
-  position: relative;
-  z-index: 1;
+  display: none;
+}
+@media (min-width: 710px) {
+  .logo {
+    display: block;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+  }
 }
 @media (min-width: 1200px) {
   .logo {
-    height: 16%;
+    height: 110px;
     background: #020724;
     padding: 1em 0;
   }
@@ -128,11 +142,16 @@ nav a {
 
 .hero__title {
   position: absolute;
-  bottom: 5em;
+  bottom: 40%;
   left: 0;
   right: 0;
   margin: 0 auto;
-  max-width: 800px;
+}
+@media (min-width: 850px) {
+  .hero__title {
+    bottom: 5em;
+    max-width: 800px;
+  }
 }
 @media (min-width: 1200px) {
   .hero__title {
@@ -152,7 +171,11 @@ nav a {
 .apps {
   margin-top: 2em;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+}
+@media (min-width: 450px) {
+  .apps {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (min-width: 1200px) {
   .apps {
@@ -287,11 +310,55 @@ nav a {
   bottom: 0;
 }
 
+.rocks {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 footer {
-  height: 30vh;
   background: #eab3e2;
   position: relative;
-  padding-top: 3em;
+  padding: 3em 0;
+}
+footer svg {
+  display: none;
+}
+@media (min-width: 880px) {
+  footer svg {
+    display: inline-block;
+    margin-top: 2em;
+    width: 100px;
+    height: 100px;
+  }
+}
+footer h2 {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+@media (min-width: 880px) {
+  footer h2 {
+    font-size: 2rem;
+  }
+}
+
+.footer__text {
+  padding-top: 2em;
+}
+.footer__text h3 {
+  display: inline-block;
+}
+.footer__text h3::after {
+  content: "";
+  background: rgba(2, 7, 36, 0.5);
+  width: 40%;
+  height: 1px;
+  display: block;
+  margin: 0.5em auto;
+}
+.footer__text p {
+  color: rgba(2, 7, 36, 0.7);
 }
 
 /*# sourceMappingURL=main.css.map */

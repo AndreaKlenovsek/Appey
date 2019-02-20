@@ -6,8 +6,9 @@ background: $clr-blue;
 .apps {
 margin-top: 2em;
 display: grid; 
+@include mq(small){
 grid-template-columns: repeat(2, 1fr);
-
+}
 @include mq(large) {
 display: grid; 
 grid-template-columns: repeat(3, 1fr);

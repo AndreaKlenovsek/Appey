@@ -1,8 +1,45 @@
 footer{
-height: 30vh;
+
 background: $clr-pink;
 position: relative;
-padding-top: 3em;
+padding: 3em 0;
 
+svg {
+    display: none;
+    @include mq(medium) {
+    display: inline-block;
+    margin-top: 2em;
+    width: 100px;
+    height: 100px;
 }
+}
+
+h2 {
+text-transform: uppercase;
+font-size: 1rem;
+@include mq(small) {
+font-size: 2rem;
+}
+}
+}
+
+.footer__text {
+padding-top: 2em;
+
+
+
+h3 {
+font-size: .8em;
+display: inline-block;
+@include line($bg: rgba($clr-blue, .5));
+}
+@include mq(small) {
+font-size: 2rem;
+}
+
+p{
+color: rgba($clr-blue, .7);
+}
+}
+
 
