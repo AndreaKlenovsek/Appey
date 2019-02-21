@@ -83,6 +83,7 @@ nav a {
   transition: background 350ms;
   padding: 0.8em 1em;
   font-size: 0.7em;
+  font-weight: 700;
 }
 @media (min-width: 700px) {
   nav a {
@@ -96,6 +97,7 @@ nav a {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-weight: normal;
   }
   nav a:hover, nav a:focus {
     background: #020724;

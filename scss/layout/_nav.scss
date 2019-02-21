@@ -49,6 +49,7 @@ font-family: $ff-garamond;
 transition: background 350ms;
 padding: .8em 1em;
 font-size: .7em;
+font-weight: $fw-bold;
 @include mq(700px) {
 font-size: 1rem;
 }
@@ -62,6 +63,7 @@ flex-basis: 100%;
 display: flex;
 align-items: center;
 justify-content: center;
+font-weight: normal;
 
 
 
