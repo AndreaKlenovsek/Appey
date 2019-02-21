@@ -99,6 +99,7 @@ nav a {
   }
   nav a:hover, nav a:focus {
     background: #020724;
+    text-shadow: 0 0 0.3em rgba(234, 179, 226, 0.2);
   }
 }
 
@@ -294,10 +295,74 @@ nav a {
   color: rgba(234, 179, 226, 0.2);
 }
 
+.appey-aps {
+  background-image: url(../img/appeybg.png);
+  background-position: center;
+  background-size: cover;
+  padding: 3em 1em;
+}
+
+.cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.card {
+  max-width: 300px;
+  height: 400px;
+  background-image: url(../img/card.png);
+  margin: 1em auto;
+  padding: 1em 0;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 0.5em rgba(234, 179, 226, 0.45);
+}
+.card__title {
+  text-transform: uppercase;
+  padding: 1em 0;
+  letter-spacing: 2px;
+  color: #020724;
+}
+.card__text {
+  padding: 1em 1em;
+  color: #020724;
+}
+
+.btn-card {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eab3e2;
+  padding: 0.8em 1.5em;
+  background-image: url(../img/bg.png);
+  background-position: center;
+  background-size: cover;
+  display: inline-block;
+  max-width: 50%;
+  margin: 0 auto;
+  margin-top: auto;
+  transition: background-size 300ms, font-weight 300ms;
+  letter-spacing: 1px;
+}
+.btn-card:hover, .btn-card:focus {
+  background-size: 120%;
+  font-weight: 700;
+}
+
 .app {
-  height: 60vh;
+  height: 30vh;
   background: #020724;
   position: relative;
+}
+@media (min-width: 1238px) {
+  .app {
+    height: 60vh;
+  }
 }
 
 .app__img {
@@ -342,7 +407,7 @@ footer h2 {
   text-transform: uppercase;
   font-size: 1rem;
 }
-@media (min-width: 880px) {
+@media (min-width: 450px) {
   footer h2 {
     font-size: 2rem;
   }
@@ -352,6 +417,7 @@ footer h2 {
   padding-top: 2em;
 }
 .footer__text h3 {
+  font-size: 0.8em;
   display: inline-block;
 }
 .footer__text h3::after {
@@ -361,6 +427,11 @@ footer h2 {
   height: 1px;
   display: block;
   margin: 0.5em auto;
+}
+@media (min-width: 450px) {
+  .footer__text {
+    font-size: 2rem;
+  }
 }
 .footer__text p {
   color: rgba(2, 7, 36, 0.7);

@@ -1,7 +1,10 @@
 .app {
-height: 60vh;
+height: 30vh;
 background: $clr-blue;
 position: relative;
+@include mq(1238px) {
+height: 60vh;
+}
 
 
 

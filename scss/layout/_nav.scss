@@ -64,9 +64,11 @@ align-items: center;
 justify-content: center;
 
 
+
 &:hover,
 &:focus {
 background: $clr-blue;
+text-shadow: 0 0 .3em rgba($clr-pink, .2);
 }
      
 }
